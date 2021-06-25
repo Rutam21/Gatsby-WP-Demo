@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Conf Demo",
+    title: "Gatsby WP Demo",
   },
   plugins: [
     `gatsby-plugin-sharp`,
@@ -9,7 +9,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-wordpress',
       options: {
-        url: 'http://rutamwpdemo.local/graphql'
+        url: 'http://the-demo-blog.local/demoBlog'
       }
     },
     {
