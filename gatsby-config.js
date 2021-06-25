@@ -7,10 +7,10 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-image`,
     {
-      resolve: `gatsby-source-wordpress`,
+      resolve: 'gatsby-source-wordpress',
       options: {
-        url: `https://jsonbahl.wpengine.com/graphql`,
-      },
+        url: 'http://the-demo-blog.local/demoBlog'
+      }
     },
     {
       resolve: "@chakra-ui/gatsby-plugin",
