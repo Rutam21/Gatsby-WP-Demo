@@ -2,7 +2,7 @@ exports.createPages = async({actions, graphql, reporter}) => {
 
     const result = await graphql(`
         {
-          posts {
+          allWpPost {
             nodes {
               __typename
               id
