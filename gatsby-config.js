@@ -7,10 +7,10 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-image`,
     {
-      resolve: 'gatsby-source-wordpress',
+      resolve: `gatsby-source-wordpress`,
       options: {
-        url: 'http://rutamwpdemo.local/graphql'
-      }
+        url: `http://rutamwpdemo.local/graphql`,
+      },
     },
     {
       resolve: "@chakra-ui/gatsby-plugin",
