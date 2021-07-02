@@ -9,7 +9,7 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        url: `http://rutamwpdemo.local/graphql`,
+        url: `https://172.105.47.149/graphql`,
       },
     },
     {
