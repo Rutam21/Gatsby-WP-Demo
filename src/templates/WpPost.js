@@ -23,6 +23,26 @@ const WpPost = ({ data }) => {
     )
 }
 
+const WpBlogs = ({ data }) => {
+    const { wpPost } = data;
+    return(
+        <>
+            <Helmet>
+                <meta name="description" content={wpPost?.seo?.metaDesc} />
+            </Helmet>
+            <Container maxW="xl" centerContent>
+                <Heading as={`h1`} m={4}>
+                    {wpPost.title}
+                </Heading>
+                <Text as={'div'} mt={4} mb={10}>
+                    <div dangerouslySetInnerHTML={{ __html: wpPost.content }} />
+                </Text>
+                <Link as={GatsbyLink} to="/">{`<< Back to Blog`}</Link>
+            </Container>
+        </>
+    )
+}
+
 export default WpPost;
 
 export const query = graphql`
